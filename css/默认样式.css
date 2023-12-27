@@ -1,0 +1,166 @@
+body {
+    font-family: 'Microsoft YaHei', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/背景.png");
+	background-repeat:no-repeat;
+	background-attachment:fixed; 
+	background-size:cover;	
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: 0;
+	list-style: none;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../img/标题.png");
+  background-repeat:no-repeat;
+  background-attachment:fixed; 
+  background-size:cover;	
+}
+
+.search-container {
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.login-container {
+  margin-right:20px;
+}
+
+.logo{
+	 margin-left: 25px;
+}
+
+.search-container {
+    position: relative;  
+	margin: 7px auto;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+	 margin-left: 85px;
+}
+
+.search-input {
+    padding: 10px;  
+    border: 1px solid #5b5b5b;
+    border-radius: 5px;  
+    outline: none; 
+    width: 200px;
+    transition: width 0.3s ease-in-out;
+}
+
+.search-input:focus {
+    width: 300px; 
+}
+
+.search-button {
+    background-color: #00a1d6;  
+    color: white;
+    padding: 10px; 
+    border: none;  
+    border-radius: 5px;
+    cursor: pointer; 
+    margin-left: 5px; 
+}
+
+header {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-image: url("../img/标题.png");
+  background-repeat:no-repeat;
+  background-attachment:fixed; 
+  background-size:cover;	
+
+}
+.topmenu {
+    list-style-type: none;
+    margin: 0;
+    border-radius: 15px;
+    padding-left: 10px;
+    overflow: hidden;
+    background-color: #f1f2f3;
+	
+}
+.topmenu li {
+    float: left;
+}
+
+.topmenu li a {
+    margin: 0;
+    border-radius: 15px;
+    padding: 20px 30px;
+    display: block;
+    color: #61666d;
+    font-weight: bolder;
+}
+
+.topmenu a:link {
+    text-decoration: none;
+}
+
+.topmenu a:hover:not(.active) {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.topmenu a.active {
+    background-color: #555;
+    color: white;
+
+}
+
+.topmenu a.login{
+	float: right;
+}
+    float: left;
+    position: relative; 
+}
+
+.topmenu li:hover .dropdown {
+    display: block;
+}
+main {
+    max-width: 1300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+	footer{
+		width: 100%;
+		height:0px;
+		margin-top:0px;
+	}
+	.foot p{
+		color:#fff;
+		text-align: center;
+		margin:auto;
+	}
+	footer{
+		width: 100%;
+		height:0px;
+		margin-top:0px;
+	}
+	.foot p{
+		color:#fff;
+		text-align: center;
+		margin:auto;
+	}
+	.foot{
+		padding-top:50px;
+		padding-bottom: 50px;;
+	}
+	
+	

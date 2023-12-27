@@ -1,0 +1,18 @@
+main {
+	background-repeat:no-repeat;
+	background-attachment:fixed; 
+	background-size:cover;
+	  background-image: url("../img/夜光.png");
+    }
+.center1 hr{
+	color: #a2a9b1;
+}
+.center2 hr{
+	color: #a2a9b1;
+}
+.center3 hr{
+	color: #a2a9b1;
+}
+.center4 hr{
+		color: #a2a9b1;
+}

@@ -1,0 +1,23 @@
+.centerA{
+	width: 820px;
+}
+.centerC{
+	position: absolute;
+	top:280px;
+	left:1030px;
+	width:290px;
+	height:400px
+}
+.centerA ul{
+			margin-left:15px;
+		width: 1600px;
+}
+.centerB{
+	margin-left:0px;
+}
+main {
+	background-repeat:no-repeat;
+	background-attachment:fixed; 
+	background-size:cover;
+	  background-image: url("../img/樱光 .png");
+    }

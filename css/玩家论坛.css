@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+.A h1{
+position: absolute;
+	top:850px;
+	left:880px;
+}.A h3{
+position: absolute;
+	top:1100px;
+	left:320px;
+}
+.F{
+	position: absolute;
+	left:600px;
+	top:900px;
+}
+ .F textarea {
+        width:700px;
+        height:200px;
+        border: 1px pink solid;
+        /* 不设置轮廓 */
+        outline: none;
+        /* 设置其不能改变长宽 */
+        resize: none;
+	 opacity:0.9;
+    }
+
+    .F li {
+        width: 300px;
+        padding: 5px;
+        background-color: #eee;
+        font-size: 15px;
+        margin: 15px 0;
+    }
+	.F-button {
+	    background-color: #00a1d6;  
+	    color: white;
+	    padding: 10px; 
+	    border: none;  
+	    border-radius: 5px;
+	    cursor: pointer; 
+	    margin-left: 5px; 
+		position: absolute;
+		top:146px;
+		left:700px;
+	}
+.center1{
+	top:0px;
+	left:0px;
+	width:900px;
+	height:150px;
+	border:2px solid #454545;
+	margin:45px 10px;
+	text-align:left;
+	position: relative;
+	background-color: aliceblue;
+}
+.center2{
+	top:0px;
+	left:0px;
+	width:900px;
+	height:150px;
+	border:2px solid #454545;
+	margin:45px 10px;
+	text-align:left;
+	position: relative;
+	background-color: aliceblue;
+}
+.center3{
+	top:0px;
+	left:0px;
+	width:900px;
+	height:150px;
+	border:2px solid #454545;
+	margin:45px 10px;
+	text-align:left;
+	position: relative;
+	background-color: aliceblue;
+}
+.center01{
+	position: absolute;
+	top:905px;
+	left:310px;
+	width:290px;
+	height:400px
+}
+.center02{
+	position: absolute;
+	top:485px;
+	left:1230px;
+	width:290px;
+	height:400px
+}
+.center03{
+	position: absolute;
+	top:285px;
+	left:1230px;
+	width:290px;
+	height:400px
+}
+.center04{
+	position: absolute;
+	top:685px;
+	left:1230px;
+	width:290px;
+	height:400px
+}
+main {
+	background-repeat:no-repeat;
+	background-attachment:fixed; 
+	background-size:cover;
+	  background-image: url("../img/樱光 .png");
+    }
