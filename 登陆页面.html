@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录/注册</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            height: 100%;
+        }
+        body {
+            height: 100%;
+        }
+        .container {
+            height: 100%;
+			background-image: url("img/日光.png");
+			background-repeat:no-repeat;
+			background-attachment:fixed; 
+			background-size:cover;
+        }
+        .login-wrapper {
+            background-color: rgb(255, 250, 232);
+            width: 358px;
+            height: 588px;
+            border-radius: 15px;
+            padding: 0 60px;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .header {
+            font-size: 38px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 200px;
+        }
+        .input-item {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            border: 0;
+            padding: 10px;
+            border-bottom: 1px solid rgb(162, 162, 162);
+            font-size: 15px;
+            outline: none;
+        }
+        .input-item::placeholder {
+            text-transform: uppercase;
+        }
+        .btn {
+            text-align: center;
+            padding:10px;
+            width: 100%;
+            margin-top: 50px;
+            background-image: linear-gradient(to right,#00ffff,#9597ee, #fbb1df);
+            color: #fff;
+        }
+        .msg {
+            text-align: center;
+            line-height: 300px;
+        }
+        a {
+            text-decoration-line: none;
+            color: #5555ff;
+        }
+.time-display {
+    position: fixed;
+    top: 10px;   /* 距离顶部的距离 */
+    right: 10px; /* 距离右侧的距离 */
+    /* 其他样式属性 */
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #84a6f0;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+		}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+		<span id="current-time" class="time-display"></span>
+
+        <div class="login-wrapper">
+            <div class="header">账户登录</div>
+            <div class="form-wrapper">
+                <input type="text" name="username" placeholder="请输入用户名" class="input-item">
+                <input type="password" name="password" placeholder="请输入密码" class="input-item">
+                <div class="btn">注册/登录</div>
+            </div>
+            <div class="msg">
+                <a href="#"> 找回账号 &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;</a></a>
+                <a href="#"> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;忘记密码</a>
+            </div>
+        </div>
+    </div>
+	
+	    <script>
+	        // 获取注册/登录按钮元素
+	        var btn = document.querySelector(".btn");
+	
+	        // 给按钮绑定点击事件
+	        btn.onclick = function() {
+	            // 弹窗提示
+	            alert("即将为你跳转到首页......");
+	        };
+			const currentTimeElement = document.getElementById('current-time');
+			function updateCurrentTime() {
+			    const now = new Date();
+			    const hours = now.getHours().toString().padStart(2, '0'); // 获取小时，并在前面补零
+			    const minutes = now.getMinutes().toString().padStart(2, '0'); // 获取分钟，并在前面补零
+			    const seconds = now.getSeconds().toString().padStart(2, '0'); // 获取秒，并在前面补零
+			
+			    const currentTimeString = `${hours}:${minutes}:${seconds}`;
+			    currentTimeElement.textContent = currentTimeString;
+			}
+			// 初始化时间显示
+			updateCurrentTime();
+			// 每秒钟更新一次时间显示
+			setInterval(updateCurrentTime, 1000);
+	    </script>
+</body>
+</html>
+
+

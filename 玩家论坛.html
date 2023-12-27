@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<link href="css/默认样式.css"type="text/css" rel="stylesheet"/>
+<link href="css/玩家论坛.css"type="text/css" rel="stylesheet"/>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>玩家论坛</title>
+	</head>
+	<body>
+		<div class="container">
+			 <div class="logo">
+			    <img src="img/Logo.ico" alt="Logo">
+			  </div>
+		  <div class="search-container">
+		    <div class="search-box">
+		      <input type="text" class="search-input" placeholder="请输入需要查询的内容......">
+		      <button class="search-button">搜索</button>
+		    </div>
+		  </div>
+		  <div class="login-container">
+		    <a class="login" href="登陆页面.html">登录/注册</a>
+		  </div>
+		</div>
+		    <header>
+				<h1>&nbsp; &nbsp;&nbsp;</h1>
+				<h1>&nbsp; &nbsp;&nbsp;</h1>
+		    </header> 
+		    <ul class="topmenu">
+		        <li>&nbsp; &nbsp; &nbsp;&nbsp;
+		              <li><a href="index.html">首页&nbsp;</a></li>
+		        <li><a href="玩法介绍.html">&nbsp;玩法介绍&nbsp;</a></li>
+				<li><a href="角色介绍.html">&nbsp;角色介绍&nbsp;</a></li>
+		        <li><a href="作者介绍.html">&nbsp;作者介绍&nbsp;</a></li>
+		        
+		        <li><a class="active" href="玩家论坛.html">&nbsp;玩家论坛&nbsp;</a></li>
+		    	    </div>
+		    	</li>
+		    </ul>
+				<main>
+					<div class="center1">
+						<div class="1">
+							
+							<p><font color="#000000" size="4">&nbsp;&nbsp;&nbsp;&nbsp;可爱的哈豆：</font></p>
+							</div>
+							<br>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;一场与自然和谐共生的冒险之旅。在星露谷，你可以摆脱现代都市的喧嚣，开始一个简单而充实的生活。游戏提供了丰富的农场管理、探索矿洞、交流社区的机会，同时还有感人的故事和丰富的角色关系。无论是玩法还是艺术风格，星露谷都是一部让人陶醉的游戏力作。</p>
+						</div>
+						<div class="center2">
+							<div class="2">
+								
+								<p><font color="#000000" size="4">&nbsp;&nbsp;&nbsp;&nbsp;美丽的静香：</font></p>
+								<br>
+								</div>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;星露谷谈话是一次心灵的治愈之旅。与村民们聊天、建立友谊，更深入地了解他们的故事，你会被他们的温暖和真诚所打动。游戏的魅力在于创造了一个真实而动人的社交体验，让你感受到自己在这个世界中的重要性。</p>
+					
+							</div>
+							<div class="center3">
+								<div class="3">
+									
+									<p><font color="#000000" size="4">&nbsp;&nbsp;&nbsp;&nbsp;拦路的小麦：</font></p>
+									<br>
+									</div>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;探索星露谷的乐趣永无止境。与每个季节的变化、稀有发现和隐藏的秘密一起，这个游戏提供了无穷的探索可能性和挑战。星露谷激发了人们对于冒险和发现的渴望，让人一次又一次地回到这个令人着迷的世界里。</p>
+								</div>
+								<div class="center01">
+									 <img src="img/头像1.png"  alt="#" height="180">
+								</div>
+								<div class="center02">
+									 <img src="img/头像2.png"  alt="#" height="142">
+								</div>
+								<div class="center03">
+									 <img src="img/头像3.png"  alt="#" height="143">
+								</div>
+								<div class="center04">
+									 <img src="img/头像4.png"  alt="#" height="142">
+								</div>
+				<div class="A">
+					<h1><font color="#DC4F52">请您留言</font></h1>
+					<h3><a href="index.html"><font color="#E7F46B">点击此处返回首页</font></a></h3>
+				</div>
+				<img src="img/background.jpg"  alt="#" height="450" >
+				<div class="F">
+				    <textarea></textarea>
+				    <button class="F-button">发布</button>
+				    <ul></ul>
+				</div>
+				<script>
+				    document.addEventListener("DOMContentLoaded", function () {
+				        var txt = document.querySelector(".F textarea");
+				        var btn = document.querySelector(".F-button");
+				        var ul = document.querySelector(".F ul");
+				    
+				        // 给button绑定点击事件
+				        btn.onclick = function () {
+				            if (txt.value == "") {
+				                alert("您没有输入内容");
+				            } else {
+				                var li = document.createElement("li");
+				                li.innerHTML = txt.value + "<a href='#'>删除</a>";
+				                txt.value = "";
+				                ul.appendChild(li);
+				    
+				                // 给每个删除绑定事件
+				                var as = document.querySelectorAll(".F ul a");
+				                for (var i = 0; i < as.length; i++) {
+				                    as[i].onclick = function () {
+				                        ul.removeChild(this.parentNode);
+				                    };
+				                }
+				            }
+				        };
+				    });
+				</script>
+				</div>
+				</main>
+				<footer>
+					<div class="foot">
+					<p>Stardew Valley  星露谷物语 © 版权所有</p>
+					<p>联系我们 StardewValley@fox.com</p>
+					</div>
+				</footer>
+	</body>
+</html>
