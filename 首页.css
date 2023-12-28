@@ -1,0 +1,389 @@
+body {
+    font-family: 'Microsoft YaHei', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/背景.png");
+	background-repeat:no-repeat;
+	background-attachment:fixed; 
+	background-size:cover;	
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: 0;
+	list-style: none;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../img/标题.png");
+  background-repeat:no-repeat;
+  background-attachment:fixed; 
+  background-size:cover;	
+}
+
+.search-container {
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.login-container {
+  margin-right:20px;
+}
+
+.logo{
+	 margin-left: 25px;
+}
+
+.search-container {
+    position: relative;  
+	margin: 7px auto;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+	 margin-left: 85px;
+}
+
+.search-input {
+    padding: 10px;  
+    border: 1px solid #5b5b5b;
+    border-radius: 5px;  
+    outline: none; 
+    width: 200px;
+    transition: width 0.3s ease-in-out;
+}
+
+.search-input:focus {
+    width: 300px; 
+}
+
+.search-button {
+    background-color: #00a1d6;  
+    color: white;
+    padding: 10px; 
+    border: none;  
+    border-radius: 5px;
+    cursor: pointer; 
+    margin-left: 5px; 
+}
+
+header {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-image: url("../img/标题.png");
+  background-repeat:no-repeat;
+  background-attachment:fixed; 
+  background-size:cover;	
+
+}
+.topmenu {
+    list-style-type: none;
+    margin: 0;
+    border-radius: 15px;
+    padding-left: 10px;
+    overflow: hidden;
+    background-color: #f1f2f3;
+	
+}
+.topmenu li {
+    float: left;
+}
+
+.topmenu li a {
+    margin: 0;
+    border-radius: 15px;
+    padding: 20px 30px;
+    display: block;
+    color: #61666d;
+    font-weight: bolder;
+}
+
+.topmenu a:link {
+    text-decoration: none;
+}
+
+.topmenu a:hover:not(.active) {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.topmenu a.active {
+    background-color: #555;
+    color: white;
+
+}
+
+.topmenu a.login{
+	float: right;
+}
+    float: left;
+    position: relative; 
+}
+
+.topmenu li:hover .dropdown {
+    display: block;
+}
+main {
+    max-width: 1300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	
+    }
+.icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 200px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.icons_items {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: -80px;
+    margin-right: -83px;
+    width: 200px;
+    height: 220px;
+}
+.icons_items_imgs {
+    border-radius: 10%;
+    width: 200px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+#banner{
+	height: 450px;
+	width: 1296px;
+	border: 2px solid #000000;
+	overflow: hidden;
+	position: relative;
+}
+#imglist
+{
+	width: 6500px;
+	height: 450px;
+}
+#imglist img{
+	width: 1300px;
+	height: 450px;
+}
+#imglist li{
+	float: left;
+}
+.prev{
+	background-color: #868686;
+	width: 30px;
+	height: 50px;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	position: absolute;
+	left: 5px;
+	top: 45%
+}
+.next{
+	background-color: #868686;
+	width: 30px;
+	height: 50px;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	position: absolute;
+	right: 5px;
+	top: 45%
+}
+
+.centerA{
+	top:880px;
+	width:900px;
+	height:400px;
+	border:2px solid#aa5500;
+	background-image: url("../img/文字背景.png");
+}
+.centerA .A{
+	position: absolute;
+	width:850px;
+	height:35px;
+	background-image: url("../img/文字背景.png");
+}
+.centerA .A p{
+	margin-top:10px;
+	margin-left:320px;
+}
+.centerA p{
+	margin-top:70px;
+	text-align:left;
+	margin-left:30px;
+	margin-right:20px;
+}
+.centerB{
+	position: absolute;
+	top:938px;
+	left:1160px;
+	width:290px;
+	height:400px
+}
+.centerC{
+	top:0px;
+	left:0px;
+	width:580px;
+	height:150px;
+	border:2px solid #464646;
+	margin:45px 10px;
+	text-align:left;
+	position: relative;
+	background-image: url("../img/文字背景1.png");
+}
+.centerC p{
+	margin:45px 10px;
+	text-align:left;
+}
+.centerC a{
+position: absolute;
+	top:120px;
+	left:505px;
+}
+.centerC .C{
+	position: absolute;
+	width:580px;
+	height:35px;
+}
+.centerC .C p{
+	margin-top:5px;
+	text-align:left;
+	margin-left:15px;
+	margin-right:15px;
+	
+}
+.centerD{
+	top:0px;
+	left:0px;
+	width:580px;
+	height:150px;
+	border:2px solid #464646;
+	margin:45px 10px;
+	text-align:left;
+	position: relative;
+		background-image: url("../img/文字背景2.png");
+}
+.centerD p{
+	margin:45px 10px;
+	text-align:left;
+}
+.centerD a{
+position: absolute;
+	top:120px;
+	left:505px;
+}
+.centerD .D{
+	position: absolute;
+	width:580px;
+	height:35px;
+}
+.centerD .D p{
+	margin-top:5px;
+	text-align:left;
+	margin-left:15px;
+	margin-right:15px;
+}
+.centerE{
+	top:0px;
+	left:0px;
+	width:580px;
+	height:150px;
+	border:2px solid #464646;
+	margin:45px 10px;
+	text-align:left;
+	position: relative;
+	background-image: url("../img/文字背景3.png");
+}
+.centerE p{
+	margin:10px 15px;
+	text-align:left;
+}
+.centerE a{
+	position: absolute;
+	top:120px;
+	left:505px;
+	
+}
+.centerE .E{
+	position: absolute;
+	width:580px;
+	height:15px;
+}
+.centerE .E p{
+	margin-top:5px;
+	text-align:left;
+	margin-left:15px;
+	margin-right:15px;
+}
+.center1{
+	position: absolute;
+	top:1380px;
+	left:930px;
+	width:290px;
+	height:400px
+	
+}
+.center2{
+	position: absolute;
+	top:1585px;
+	left:930px;
+	width:290px;
+	height:400px
+}
+.center3{
+	position: absolute;
+	top:1780px;
+	left:930px;
+	width:290px;
+	height:400px
+}
+.mainpage_logos{
+	padding-left: 230px;;
+}
+	footer{
+		width: 100%;
+		height:0px;
+		margin-top:0px;
+	}
+	.foot p{
+		color:#fff;
+		text-align: center;
+		margin:auto;
+	}
+	footer{
+		width: 100%;
+		height:0px;
+		margin-top:0px;
+	}
+	.foot p{
+		color:#fff;
+		text-align: center;
+		margin:auto;
+	}
+	.foot{
+		padding-top:50px;
+		padding-bottom: 50px;;
+	}
+	
+main{
+	background-image: url("../img/日光.png");
+	background-repeat:no-repeat;
+	background-attachment:fixed; 
+	background-size:cover;	
+}
