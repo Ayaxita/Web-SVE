@@ -334,14 +334,15 @@ position: absolute;
 .center1{
 	position: absolute;
 	top:1380px;
-	left:900px;
+	left:930px;
 	width:290px;
 	height:400px
+	
 }
 .center2{
 	position: absolute;
-	top:1580px;
-	left:945px;
+	top:1585px;
+	left:930px;
 	width:290px;
 	height:400px
 }
@@ -352,16 +353,37 @@ position: absolute;
 	width:290px;
 	height:400px
 }
-footer{
-	width: 100%;
-	height:0px;
-	margin-top:0px;
+.mainpage_logos{
+	padding-left: 230px;;
 }
-.foot p{
-	color:#fff;
-	text-align: center;
-	margin:auto;
-}
-.foot{
-	padding-top:50px;
+	footer{
+		width: 100%;
+		height:0px;
+		margin-top:0px;
+	}
+	.foot p{
+		color:#fff;
+		text-align: center;
+		margin:auto;
+	}
+	footer{
+		width: 100%;
+		height:0px;
+		margin-top:0px;
+	}
+	.foot p{
+		color:#fff;
+		text-align: center;
+		margin:auto;
+	}
+	.foot{
+		padding-top:50px;
+		padding-bottom: 50px;;
+	}
+	
+main{
+	background-image: url("../img/日光.png");
+	background-repeat:no-repeat;
+	background-attachment:fixed; 
+	background-size:cover;	
 }
